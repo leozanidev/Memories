@@ -1,2 +1,35 @@
 POST http://localhost:3000/memories/
----webkit
+Content-Type: multipart/form-data; boundary=formstart
+
+--formstart
+Content-Disposition: form-data; name="title"
+
+Um título 2
+--formstart
+Content-Disposition: form-data; name="description"
+
+Uma descrição 2
+--formstart
+Content-Disposition: form-data; name="image"; filename="imagem1.png"
+Content-Type: image/png
+
+< C:\Users\leona\OneDrive\Área de Trabalho\Memories\imagem5.png
+--formstart--
+
+###
+GET http://localhost:3000/memories/
+
+###
+GET http://localhost:3000/memories/6918923a28c6d4ebd1376b0c
+
+###
+DELETE http://localhost:3000/memories/6918922828c6d4ebd1376b0a
+
+###
+PATCH  http://localhost:3000/memories/6918923a28c6d4ebd1376b0c
+Content-Type: application/json
+
+{
+    "title": "Um novo título foi inserido via PATCH Method",
+    "description": "Uma nova descrição inserida via PATCH Method"
+}
