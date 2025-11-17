@@ -4,9 +4,14 @@ import { useState } from "react";
 
 import "./AddMemory.css";
 
+import { toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
+
 const AddMemory = () => {
   const [inputs, setInputs] = useState({});
   const [image, setImage] = useState(null);
+
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -22,8 +27,13 @@ const AddMemory = () => {
           "Content-Type": "multipart/form-data",
         },
       });
+
+      toast.success(response.data.msg);
+
+      navigate("/");
     } catch (error) {
       console.log(error);
+      toast.error(error.response.data.msg);
     }
   };
 
@@ -53,7 +63,8 @@ const AddMemory = () => {
             type="text"
             placeholder="Descreva a memória"
             name="description"
-            onChange={handleChange}></textarea>
+            onChange={handleChange}
+          ></textarea>
         </label>
         <label>
           <p>Foto:</p>
