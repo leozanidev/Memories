@@ -33,3 +33,15 @@ Content-Type: application/json
     "title": "Um novo título foi inserido via PATCH Method",
     "description": "Uma nova descrição inserida via PATCH Method"
 }
+
+###
+PATCH http://localhost:3000/memories/favorite/6918923a28c6d4ebd1376b0c
+
+###
+PATCH http://localhost:3000/memories/6918923a28c6d4ebd1376b0c/comment
+Content-Type: application/json
+
+{
+    "name": "Leonardo",
+    "text": "Um terceiro comentário foi inserido!"
+}
