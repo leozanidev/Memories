@@ -3,8 +3,11 @@
 <img width="1901" height="929" alt="image" src="https://github.com/user-attachments/assets/9999e0f8-f335-4029-8025-cba78d16300f" />
 
 *PROJETO MEMORIES*
+
 Projeto feito acompanhando vídeo aula.
+
 Um site para armazenamento de memórias, utilizando os métodos GET, POST, PATCH e DELETE, para garantir funcionalidades como, por exemplo, adição de comentários, edição de postagens, dentre outros.
+
 Nesse projeto, mais uma vez, trabalhei elaborando um banco de dados e construindo funções nele. Armazenei dados no MongoDB Atlas, um banco de dados MongoDB.
 
 No back-end utilizei:
@@ -15,7 +18,7 @@ No back-end utilizei:
   5. A ferramente NodeMon, para monitoração de alterações no código e hot reload, facilitando a aplicação de alterações no código;
   6. A biblioteca MonGoose, para facilitar interação entre o código JS e o banco de dados MongoDB;
   7. O middleware Multer, para faciltiar o upload de arquivos.
-  8. 
+
 No front-end usei:
   1. O framework React, para criação de uma SPA rápida que possa ser atualizada em tempo real;
   2. A ferramenta Vite, para uma configuração mais simples do ambiente de desenvolvimento, sem a necessidade de ter que desenvolvê-lo completamente do zero;
