@@ -1,6 +1,7 @@
 .home h2 {
   color: #1146a6;
   padding: 2rem 0 1rem;
+  text-align: center;
 }
 
 .memories-container {
@@ -20,6 +21,7 @@
 }
 
 .memory img {
+  min-height: 200px;
   max-height: 300px;
   object-fit: cover;
   border-radius: 10px;
